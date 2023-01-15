@@ -1,0 +1,108 @@
+/*Выберите абзацы <p> внутри дивов <div>*/
+div p {
+  color: blue;
+}
+/*вес селектора - 2*/
+
+/*Выберите все <h2> внутри дивов <div>*/
+div h2 {
+  font-size: 32px;
+  color: mediumaquamarine;
+}
+/* 2 */
+/*Выберите все абзацы <p> из элемента с id=test*/
+#test p {
+  background-color: teal;
+  font-weight: 700;
+}
+/* 101 */
+/*Выберите все <h2> из элемента с id=test*/
+#test h2 {
+  background-color: darkmagenta;
+  font-size: 18px;
+}
+/* 101 */
+/*Выберите все элементы с классом bbb*/
+.bbb {
+  color: aqua;
+  font-weight: 500;
+}
+/* 10 */
+/*Выберите все элементы с классом bbb из элемента с id=test*/
+#test .bbb {
+  color: darkgreen;
+  border: 12px;
+}
+/*110*/
+/*Выберите все абзацы <p> с классом bbb*/
+p.bbb {
+  border-color: chartreuse;
+  background-color: dodgerblue;
+}
+/* 11 */
+/*Выберите все <h2> с классом bbb*/
+h2.bbb {
+  background-color: olive;
+  font-size: 17px;
+}
+/* 11 */
+/*Выберите все абзацы <p> с классом bbb из элемента с id=test*/
+#test p.bbb {
+  color: darkorchid;
+  font-weight: 200;
+}
+/* 111 */
+/*Выберите все элементы с классом bbb и элементы с классом xxx одновременно*/
+.bbb,
+.xxx {
+  background: purple;
+  color: white;
+}
+/*вес селектора - 10, 10*/
+
+/*Выберите все абзацы <p> с классом bbb и <h2> с классом xxx одновременно*/
+p.bbb,
+h2.xxx {
+  background-color: palevioletred;
+  color: cadetblue;
+}
+/*11, 11*/
+/*Выберите все абзацы <p> с классом bbb из id=test и все абзацы <p> с классом xxx из id=test одновременно*/
+#test p.bbb,
+#test p.xxx {
+  background-color: deeppink;
+  color: forestgreen;
+}
+/*111,111*/
+
+/*Выберите все элементы из класса fff */
+.fff * {
+  color: plum;
+  background-color: black;
+}
+/*11*/
+/*Выберите все абзацы <p> из класса fff */
+.fff p {
+  color: goldenrod;
+  font-size: 14px;
+}
+/*11*/
+/*Выберите все абзацы <p> с классом fff */
+p.fff {
+  background-color: chocolate;
+  font-size: 14px;
+}
+/*11*/
+/*Выберите все элементы с классом bbb из класса fff*/
+.fff .bbb {
+  color: blueviolet;
+  background-color: floralwhite;
+}
+/*20*/
+/*Выберите все <h2> с классом bbb из класса fff*/
+.fff h2.bbb {
+  color: darkblue;
+  background-color: blanchedalmond;
+  font-size: 24px;
+}
+/*21*/
